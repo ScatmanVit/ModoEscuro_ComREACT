@@ -23,17 +23,18 @@
     border-radius: 1em;
     background-color: var(--toggle-bg);
     margin-right: 0.5em;
-    transition:background-color 250ms ease-it-out;
+    transition: background-color 250ms ease-in-out;
 }
 
 .toggle + label::after {
     content: "";
-    height: 1em;
-    width: 2em;
+    height: 0.8em;
+    width: 0.8em;
     border-radius: 1em;
     background-color: var(--toggle-fg);
     position: absolute;
     left: 0.2em;
+    transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
 }
 
 .toggle:checked + label::after {
