@@ -7,7 +7,7 @@ function App() {
     const [dark, setDark] = useState(false);
 
     return (
-        <div className="App" data-theme={dark ? "dark" : "light"}>
+        <div className="App" data-theme={dark ? "dark" : "light" /*O tema claro funciona porque as variáveis em :root são o padrão, usadas quando data-theme não é "dark".*/}>
             <Toggle isChecked={dark}
                 handleChange={() => setDark(!dark)}
             />
